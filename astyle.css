@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    border: border-box;
+}
+.navbar{
+    height: 60px;
+    background: #0F1111;
+    display: flex;
+    align-items: center;
+}
+.nav-location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav-logo{
+    height: 50px;
+    width: 143px;
+}
+.logo{
+    background-image: url('./images/amazon_logo.png');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+.nav-location{
+    color: white;
+    height: 50px;
+    width: 100px;
+    margin-left: 20px;
+    text-align: center;
+}
+#deliver{
+    font-size: 13px;
+    color: gainsboro;
+    margin-left: 15px;
+}
+#country{
+    font-weight: 600;
+    font-size: 15px;
+}
+.nav-search{
+    height: 45px;
+    width: 890px;
+    display: flex;
+    align-items: center;
+}
+select{
+    height: 100%;
+    border: none;
+    background: #E6E6E6;
+    border-radius: 5px 0px 0px 5px;
+    cursor: pointer;
+    outline: none;
+    text-transform: capitalize;
+    border: 5px solid transparent;
+}
+.nav-search input{
+    height: 100%;
+    width: 680px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+}
+input::placeholder{
+    padding-left: 10px;
+}
+.nav-search button{
+    width: 50px;
+    height: 100%;
+    font-size: 20px;
+    background: #FEBD69;
+    color: black;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+    border: 5px solid transparent;
+}
+.nav-search button:hover{
+    background: #de9638;
+}
+.border-orange{
+    border: 5px solid transparent;
+}
+.nav-lan{
+    width: 70px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+.lan-flag{
+    height: 16px;
+    width: 20px;
+    background: #000;
+    background-image: url('./images/america.png');
+    background-size: cover;
+    margin: 5px 5px 0px 0px;
+}
+.lan{
+    display: flex;
+}
+.nav-lan span{
+    font-weight: 800;
+    font-size: 15px;
+    color: white;
+}
+.testing{
+    height: 450px;
+    width: 220px;
+    position: absolute;
+    top: 50px;
+    right: 125px;
+    background: #fff;
+    padding: 5px 14px 7px 14px;
+    display: none;
+    margin-top: 5px;
+}
+.testing span{
+    color: #000;
+    font-size: 13px;
+    font-weight: 500;
+}
+.testing a{
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 500;
+    color: #007185;
+}
+.testing hr{
+    margin-top: 5px;
+}
+.sm-div{
+    width: 20px;
+    height: 20px;
+    background: white;
+    margin: -10px 0px 0px 40px;
+    transform: rotate(135deg);
+}
+.testing input{
+    margin: 10px 0px 10px 0px;
+}
+#lan{
+    text-transform: none;
+    color: black;
+    font-size: 13px;
+}
+#lan:hover{
+    color: rgb(233, 101, 53);
+    text-decoration: underline;
+}
+#eng{
+    margin-top: 15px;
+}
+#chn{
+    margin-left: 60px;
+    font-weight: 600;
+}
+.nav-account{
+    width: 130px;
+    height: 50px;
+    align-content: center;
+}
+.nav-account span{
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+    color: white;
+}
+#acc{
+    font-size: 13px;
+    font-weight: 800;
+}
+.acc-test{
+    height: 400px;
+    width: 470px;
+    text-align: center;
+    background: white;
+    position: absolute;
+    right: 100px;
+    border-radius: 2px;
+    display: none;
+    margin-top: 5px;
+    padding: 14px 14px 7px 14px;
+}
+.acc-sm{
+    margin: -18px 0px 0px 85%;
+}
+.sign-btn{
+    height: 35px;
+    width: 220px;background: #FFD814;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+.sign-btn:hover{
+    text-decoration: underline;
+    text-decoration-color: #E47911;
+}
+
+.acc-test a{
+    color: #0197b1;
+    text-decoration: none;
+    font-size: 12px;
+}
+.acc-test hr{
+    margin-top: 10px;
+}
+.acc-test a:hover{
+    text-decoration: underline;
+    color: #E47911;
+    text-decoration-color: #E47911;
+}
+.acc-p
+{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+.acc-c{
+    height: 95%;
+    width: 50%;
+    margin-top: 10px;
+    text-align: start;
+    padding: 10px;
+}
+#acc-head{
+    font-size: 18px;
+    font-weight: 600;
+}
+.acc-c ul li{
+    list-style: none;
+    padding-top: 7px;
+}
+#acc-c-a{
+    font-size: 12px;
+    color: #4e4d4d;
+}
+#acc-c-a:hover{
+    color: #E47911;
+}
+.nav-order{
+    width: 80px;
+    height: 50px;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.nav-cart{
+    height: 50px;
+    width: 75px;
+    align-content: center;
+    text-align: center;
+}
+.nav-cart i{
+    font-size: 25px;
+    color: white;
+}
+.wrapper{
+    /* background: rgb(132, 130, 130); */
+    background-image: url('./images/america.png');
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    /* background-blend-mode: overlay; */
+}
