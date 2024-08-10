@@ -5,6 +5,8 @@ var button = document.getElementById('button');
 var wrapper = document.getElementById('wrapper');
 var lan = document.getElementById('language');
 var acc = document.getElementById('acc-p');
+var all =document.getElementById('All');
+var cross = document.getElementById('cross');
 
 fBorder = () => {
     div.style.border = "4px solid orange";
@@ -40,7 +42,12 @@ acchover = () => {
     wrapper.style.backgroundBlendMode = "overlay";
     document.getElementById('acc-test').style.display = "block";
 }
-
+openSideMenu = ()=>{
+    document.getElementById('sidebar').style.display = "block";
+}
+closeSideBar = ()=>{
+    document.getElementById('sidebar').style.animationName = "closing";
+}
 //when click on input it will show border on parent div and will add opacity on main-area by fBorder function
 input.addEventListener('click',fBorder);
 //when click on select it will show border on select by sBorder function
@@ -63,3 +70,7 @@ acc.addEventListener('mouseout',event=>{
     wrapper.style.backgroundBlendMode = "normal";
     document.getElementById('acc-test').style.display = "none";
 })
+
+//opening sidebar
+all.addEventListener('click',openSideMenu);
+cross.addEventListener('click',closeSideBar);
