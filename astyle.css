@@ -14,16 +14,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 5px;
+    color: white;
+    height: 50px;
+    width: 100px;
+    text-align: center;
 }
 .nav-logo{
     height: 50px;
-    width: 143px;
+    width: 124px;
 }
 .logo{
     background-image: url('./images/amazon_logo.png');
     background-size: cover;
-    height: 100%;
-    width: 100%;
+    height: 72%;
+    width: 75%;
+    margin: 10px -2px 10px 10px;
 }
 .border{
     border: 1.5px solid transparent;
@@ -31,25 +37,19 @@
 .border:hover{
     border: 1.5px solid white;
 }
-.nav-location{
-    color: white;
-    height: 50px;
-    width: 100px;
-    margin-left: 20px;
-    text-align: center;
-}
 #deliver{
-    font-size: 13px;
+    font-size: 11px;
+    font-weight: 400;
     color: gainsboro;
-    margin-left: 15px;
+    line-height: 3px;
 }
 #country{
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
 }
 .nav-search{
-    height: 45px;
-    width: 890px;
+    height: 65%;
+    width: 60%;
     display: flex;
     align-items: center;
 }
@@ -104,14 +104,20 @@ input::placeholder{
     background: #000;
     background-image: url('./images/america.png');
     background-size: cover;
-    margin: 5px 5px 0px 0px;
+    margin-right: 5px;
+}
+.lan i{
+    color: #A6ABB1;
+    font-size: 10px;
+    margin: 6px 0px 0px 3px;
 }
 .lan{
     display: flex;
+    margin-top: 10px;
 }
 .nav-lan span{
-    font-weight: 800;
-    font-size: 15px;
+    font-weight: 700;
+    font-size: 14px;
     color: white;
 }
 .testing{
@@ -169,6 +175,8 @@ input::placeholder{
     width: 130px;
     height: 50px;
     align-content: center;
+    line-height: 15px;
+    margin-top: 10px;
 }
 .nav-account span{
     font-size: 12px;
@@ -179,6 +187,7 @@ input::placeholder{
 #acc{
     font-size: 13px;
     font-weight: 800;
+    margin-top: -1px;
 }
 .acc-test{
     height: 400px;
@@ -254,12 +263,15 @@ input::placeholder{
     align-content: center;
     text-align: center;
     cursor: pointer;
+    line-height: 15px;
+    margin-top: 10px;
 }
 .nav-cart{
     height: 50px;
     width: 75px;
     align-content: center;
     text-align: center;
+    margin-top: 10px;
 }
 .nav-cart i{
     font-size: 25px;
@@ -279,11 +291,11 @@ input::placeholder{
     cursor: pointer;
     align-content: center;
     text-align: center;
-    margin-right: 20px;
-    padding: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 15px;
 }
 #bold-txt{
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 14px;
 }
 /* NAV END */
 .side-main{
@@ -385,7 +397,7 @@ input::placeholder{
 }
 .wrapper{
     width: 100%;
-    height: 1500px;
+    height: 500px;
 }
 .wrapper img{
     width: 100%;
@@ -469,3 +481,45 @@ input::placeholder{
 #one-img:hover a {
     color: #E47911;
 }
+/* Slide-Card Start */
+.slide-card{
+    width: 100%;
+    height: 250px;
+    background: #E3E6E6;
+    display: flex;
+    justify-content: center;
+    margin-top: -0px;
+}
+.card-slider{
+    width: 97%;
+    height: 90%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+}
+.s-card{
+    width: 13%;
+    height: 95%;
+    text-align: center;
+}.card-slider button{
+    width: 45px;
+    height: 100px;
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    margin-top: 5%;
+}.s-card img{
+    height: 100%;
+    width: 90%;
+}
+.slide-card:hover{
+    .card-slider button{
+        background: white;
+        transition: 1.5s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        cursor: pointer;
+    }
+}
+
+/* Slide-Card End */
