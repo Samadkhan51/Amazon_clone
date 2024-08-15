@@ -43,10 +43,10 @@ acchover = () => {
     document.getElementById('acc-test').style.display = "block";
 }
 openSideMenu = ()=>{
-    document.getElementById('sidebar').style.display = "block";
+    document.getElementById('sidebar').style.transform = "translateX(0%)";
 }
 closeSideBar = ()=>{
-    document.getElementById('sidebar').style.animationName = "closing";
+    document.getElementById('sidebar').style.transform = "translateX(-113%)";
 }
 //when click on input it will show border on parent div and will add opacity on main-area by fBorder function
 input.addEventListener('click',fBorder);
@@ -74,3 +74,30 @@ acc.addEventListener('mouseout',event=>{
 //opening sidebar
 all.addEventListener('click',openSideMenu);
 cross.addEventListener('click',closeSideBar);
+
+//Slider Start
+const slide = document.querySelectorAll('.slider');
+let counter = 0;
+
+slide.forEach(
+    (slide,index) =>{
+        slide.style.left = `${index*100}%`;
+    }
+)
+
+goPrev =()=>{
+    counter--;
+    divSlide();
+}
+goNext = () =>{
+    counter++;
+    divSlide();
+}
+divSlide = () =>{
+    slide.forEach(
+        (slide)=>{
+            slide.style.transform = `translateX(-${counter*100}%)`;
+        }
+    )
+}
+// Slider End

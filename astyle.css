@@ -304,24 +304,9 @@ input::placeholder{
     background: orange;
     position: fixed;
     top: 0;
-    display: none;
-    animation: oepning 0.5s normal;
+    transform: translateX(-113%);
+    transition: 1s;
 }
-@keyframes oepning{
-    from {width: 0px;}
-    to {width: 24%;}
-}
-@keyframes closing{
-    from {
-        width: 24%;
-        display: block;
-    }
-    to {
-        width: 0px;
-        display: none;;
-    }
-}
-/* ANIMATION TO OPEN SIDEBAR */
 .acc-btn{
     width: 100%;
     height: 50px;
@@ -426,6 +411,7 @@ input::placeholder{
 #head2{
     background: #E3E6E6;
     margin-top: -70px;
+    margin-bottom: -40px;
 }
 #head2 .ht-card{
     margin-top: 20px;
@@ -482,44 +468,77 @@ input::placeholder{
     color: #E47911;
 }
 /* Slide-Card Start */
-.slide-card{
+.slide-main{
     width: 100%;
-    height: 250px;
+    height: 280px;
     background: #E3E6E6;
     display: flex;
     justify-content: center;
-    margin-top: -0px;
+    /* position: relative;
+    overflow-x: hidden; */
 }
-.card-slider{
-    width: 97%;
-    height: 90%;
+.slide{
+    height: 100%;
+    width: 97.2%;
     background: white;
     display: flex;
-    justify-content: center;
-    margin-top: -40px;
+    flex-direction: column;
+    overflow-x: hidden;
 }
-.s-card{
-    width: 13%;
-    height: 95%;
-    text-align: center;
-}.card-slider button{
-    width: 45px;
-    height: 100px;
+.slide-head{
+    width: 100%;
+    height: 15%;
+    background: white;
+    align-content: end;
+}
+.slide-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+#sbtn{
+    font-size: 28px;
+    color: #4e4d4d;
+    cursor: pointer;
+    background: white;
     border: none;
-    background: transparent;
-    font-size: 25px;
-    margin-top: 5%;
-}.s-card img{
+    box-shadow: 2px 2px 2px 2px gainsboro;
+}
+#sbtn:hover{
+    color: black;
+}
+.btn2{
+    position: absolute;
+    right: 20px;
+    margin-top: 90px
+}
+.btn button{
+    position: absolute;
+    z-index: 1;
+    margin-top: 60px;
+}
+#sbtn{
+    height: 100px;
+    width: 50px;
+}
+.slider{
+    display: flex;
     height: 100%;
-    width: 90%;
+    width: 100%;
+    background: orange;
+    justify-content: space-between;
+    position: absolute;
+    transition: 1s;
 }
-.slide-card:hover{
-    .card-slider button{
-        background: white;
-        transition: 1.5s;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        cursor: pointer;
-    }
+.card{
+    height: 200px;
+    width: 150px;
+    margin: 10px 15px 0px 15px;
 }
-
+.card img{
+    height: 100%;
+    width: 100%;
+}
 /* Slide-Card End */
