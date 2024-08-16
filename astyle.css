@@ -498,15 +498,17 @@ input::placeholder{
     align-items: center;
     position: relative;
 }
-#sbtn{
+.btn-slide{
     font-size: 28px;
     color: #4e4d4d;
     cursor: pointer;
     background: white;
     border: none;
     box-shadow: 2px 2px 2px 2px gainsboro;
+    height: 100px;
+    width: 50px;
 }
-#sbtn:hover{
+#btn-slide:hover{
     color: black;
 }
 .btn2{
@@ -519,11 +521,7 @@ input::placeholder{
     z-index: 1;
     margin-top: 60px;
 }
-#sbtn{
-    height: 100px;
-    width: 50px;
-}
-.slider{
+.slider , .slider1{
     display: flex;
     height: 100%;
     width: 100%;

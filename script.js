@@ -77,6 +77,7 @@ cross.addEventListener('click',closeSideBar);
 
 //Slider Start
 const slide = document.querySelectorAll('.slider');
+const slide1 = document.querySelectorAll('.slider1');
 let counter = 0;
 
 slide.forEach(
@@ -87,16 +88,29 @@ slide.forEach(
 
 goPrev =()=>{
     counter--;
-    divSlide();
+    if(counter>-1)
+    {
+        divSlide();
+    }
 }
 goNext = () =>{
     counter++;
-    divSlide();
+    if(counter<slide.length)
+    {
+        divSlide();
+    }
 }
 divSlide = () =>{
     slide.forEach(
         (slide)=>{
             slide.style.transform = `translateX(-${counter*100}%)`;
+        }
+    )
+}
+divSlide1 = () =>{
+    slide1.forEach(
+        (slide1)=>{
+            slide1.style.transform = `translateX(-${counter*100}%)`
         }
     )
 }
