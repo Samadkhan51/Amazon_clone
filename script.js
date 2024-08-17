@@ -7,6 +7,7 @@ var lan = document.getElementById('language');
 var acc = document.getElementById('acc-p');
 var all =document.getElementById('All');
 var cross = document.getElementById('cross');
+var language = document.getElementById('foot-lan');
 
 fBorder = () => {
     div.style.border = "4px solid orange";
@@ -48,6 +49,9 @@ openSideMenu = ()=>{
 closeSideBar = ()=>{
     document.getElementById('sidebar').style.transform = "translateX(-113%)";
 }
+hoverFoot = () =>{
+    document.getElementById('test2').style.display = "block";
+}
 //when click on input it will show border on parent div and will add opacity on main-area by fBorder function
 input.addEventListener('click',fBorder);
 //when click on select it will show border on select by sBorder function
@@ -58,7 +62,13 @@ button.addEventListener('click',bBorder);
 wrapper.addEventListener('click',removeBorder);
 // when you hover on language it will add filter to wrapper function
 lan.addEventListener('mouseover',hoverbody);
-
+// when you hover on language in footer
+language.addEventListener('mouseover',hoverFoot);
+//uhover language footer
+language.addEventListener('mouseout',event =>{
+    document.getElementById('test2').style.display = "none";
+})
+//unhover language nav
 lan.addEventListener('mouseout',event => {
     wrapper.style.backgroundBlendMode = "normal";
     document.getElementById('test').style.display = "none";

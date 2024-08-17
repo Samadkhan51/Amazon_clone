@@ -389,18 +389,20 @@ input::placeholder{
     width: 100%;
     height: 650px;
 }
-.wrapper {
+/* .wrapper {
     width: 100%;
     background-image:
     linear-gradient(to bottom,  rgba(175, 173, 173, 0) 50%, #E3E6E6 100%),
     url('./images/banner.jpg');
-    height: 700px;
+    height: 600px;
     background-size: cover;
     background-position: center;
     color: white;
     padding-top: 1px;
-    /* margin: 0; */
-}
+} */
+ .wrapper img{
+    height: 600px;
+ }
 .head-top{
     width: 100%;
     height: 500px;
@@ -411,7 +413,7 @@ input::placeholder{
 }
 #head2{
     background: #E3E6E6;
-    margin-top: -70px;
+    margin-top: -17%;
     margin-bottom: -40px;
 }
 #head2 .ht-card{
@@ -649,19 +651,27 @@ input::placeholder{
     justify-content: center;
 } 
 .s-foot-card{
-    width: 9%;
+    width: 8.5%;
     height: 30%;
     margin: 50px 10px 10px 0px;
-    border: 1px solid gainsboro;
-    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
     color: white;
     font-size: 14px;
     display: flex;
     cursor: pointer;
 }
 .glo{
-    align-content: center;
-    padding: 0px 10px 0px 10px;
+    /* padding: 0px 10px 0px 10px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #CCCCCC  ;
+}
+.glo span{
+    font-size: 11px;
+    font-weight: 600;
 }
 .s-foot span{
     margin-left: 5px;
@@ -669,25 +679,93 @@ input::placeholder{
 #s-foot-img{
     background-image: url('./images/amazon_logo.png');
     background-size: cover;
-    width: 5%;
+    width: 6%;
     margin-right: 50px;
     border: none;
 }
 .foot-icon{
     width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #CCCCCC;
+}
+.foot-icon i{
+    font-size: 10px;
+    margin-top: 0px;
 }
 .test2{
-    height: 450px;
+    height: auto;
     width: 220px;
     background: white;
     position: absolute;
     padding: 5px 14px 7px 14px;
-    left: 42%;
+    left: 43%;
+    margin-top: 3%;
     display: none;
 }
 .t-foot{
     width: 100%;
-    height: 500px;
-    background: orange;
+    height: 400px;
+    background: #131A22;
+    display: flex;
+    justify-content: center;
 }
-foot End
+.t-foot-inner{
+    width: 70%;
+    height: 80%;
+    margin-top: 30px;
+}
+.foot-inner{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.foot-item{
+    width: 10%;
+    height: 100%;
+}
+.foot-item a{
+    font-size: 11px;
+    text-decoration: none;
+    color: rgb(146, 144, 144);
+}
+.foot-item span{
+    word-spacing: -1px; 
+    text-transform: capitalize;
+}
+.t-foot-head{
+    text-transform: capitalize;
+    color: gainsboro;
+    font-size: 12px;
+}
+.foot-item a:hover{
+    text-decoration: underline;
+}
+.fourth-foot{
+    width: 100%;
+    height: 80px;
+    background: #131A22;
+    display: flex;
+    justify-content: center;
+}
+.f-foot-inner{
+    width: 60%;
+    height: 100%;
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(146, 144, 144);
+}
+.f-foot-inner a{
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 10px;
+    color: rgb(146, 144, 144);;
+}
+.f-foot-inner a:hover{
+    text-decoration: underline;
+}
+.f-foot-inner span{
+    font-size: 12px;
+}
