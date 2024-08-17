@@ -78,11 +78,17 @@ cross.addEventListener('click',closeSideBar);
 //Slider Start
 const slide = document.querySelectorAll('.slider');
 const slide1 = document.querySelectorAll('.slider1');
+let counter1 = 0;
 let counter = 0;
 
 slide.forEach(
     (slide,index) =>{
         slide.style.left = `${index*100}%`;
+    }
+)
+slide1.forEach(
+    (slide1,index) =>{
+        slide1.style.left = `${index*100}%`
     }
 )
 
@@ -93,13 +99,39 @@ goPrev =()=>{
         divSlide();
     }
 }
+goPrev1 = ()=>{
+    counter1--;
+    if(counter1 > -1)
+    {
+        divSlide1();
+    }
+}
 goNext = () =>{
     counter++;
-    if(counter<slide.length)
+    if(counter < slide.length - 1)
     {
         divSlide();
     }
+    else if(counter === slide.length - 1)
+    {
+        document.getElementById('next').style.opacity = "0.5";
+        document.getElementById('next').style.border = "1px solid black";
+        divSlide();
+    }
 }
+goNext1 = () => {
+    counter1++;
+    if (counter1 < slide1.length - 1) {
+        divSlide1();
+    }   
+    else if (counter1 === slide1.length - 1) {
+        document.getElementById('next1').style.opacity = "0.5";
+        document.getElementById('next1').style.border = "1px solid black";
+
+        divSlide1();
+    }
+}
+
 divSlide = () =>{
     slide.forEach(
         (slide)=>{
@@ -110,7 +142,7 @@ divSlide = () =>{
 divSlide1 = () =>{
     slide1.forEach(
         (slide1)=>{
-            slide1.style.transform = `translateX(-${counter*100}%)`
+            slide1.style.transform = `translateX(-${counter1*100}%)`
         }
     )
 }
