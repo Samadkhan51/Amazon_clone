@@ -132,18 +132,18 @@ input::placeholder{
     display: none;
     margin-top: 5px;
 }
-.testing span{
+.testing span,.test2 span{
     color: #000;
     font-size: 13px;
     font-weight: 500;
 }
-.testing a{
+.testing a,.test2 a{
     text-decoration: none;
     font-size: 11px;
     font-weight: 500;
     color: #007185;
 }
-.testing hr{
+.testing hr,.test2 hr{
     margin-top: 5px;
 }
 .sm-div{
@@ -153,7 +153,7 @@ input::placeholder{
     margin: -10px 0px 0px 40px;
     transform: rotate(135deg);
 }
-.testing input{
+.testing input,.test2 input{
     margin: 10px 0px 10px 0px;
 }
 #lan{
@@ -609,7 +609,7 @@ input::placeholder{
 }
 .first-footer{
     width: 100%;
-    height: 500px;
+    height: 400px;
     background:#232F3E;
     display: flex;
     justify-content: space-evenly;
@@ -617,12 +617,77 @@ input::placeholder{
     margin-top: 3%;
 }
 .f-foot{
-    height: 70%;
+    height: 50%;
     width: 14%;
+    color: white;
+}
+.f-foot span{
+    font-weight: 600;
+    margin-left: 30px;
+}
+.f-foot ul{
+    margin-left: 30px;
+}
+.f-foot ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+.f-foot ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-size: 14px;
+}
+.f-foot ul li a:hover{
+    text-decoration: underline;
+}
+.s-foot{
+    width: 100%;
+    height: 100px;
+    background: #232F3E;
+    display: flex;
+    justify-content: center;
+} 
+.s-foot-card{
+    width: 9%;
+    height: 30%;
+    margin: 50px 10px 10px 0px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    cursor: pointer;
+}
+.glo{
+    align-content: center;
+    padding: 0px 10px 0px 10px;
+}
+.s-foot span{
+    margin-left: 5px;
+}
+#s-foot-img{
+    background-image: url('./images/amazon_logo.png');
+    background-size: cover;
+    width: 5%;
+    margin-right: 50px;
+    border: none;
+}
+.foot-icon{
+    width: 40px;
+}
+.test2{
+    height: 450px;
+    width: 220px;
+    background: white;
+    position: absolute;
+    padding: 5px 14px 7px 14px;
+    left: 42%;
+    display: none;
+}
+.t-foot{
+    width: 100%;
+    height: 500px;
     background: orange;
-    
 }
-f.foot span{
-    color: black;
-}
-/* foot End */
+foot End
